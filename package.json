@@ -1,6 +1,6 @@
 {
   "name": "ex-three",
-  "homepage": "https://HungVu12112.github.io/lemon-story/",
+  "homepage": "https://HungVu12112.github.io/lemon-story",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.8",
