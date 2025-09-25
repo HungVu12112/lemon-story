@@ -97,14 +97,16 @@ const Navbar: React.FC<NavbarProp> = ({category}) => {
                                 <div
                                     className="absolute top-full left-0 mt-2 w-56 max-w-[90vw] bg-gray-800 shadow-lg rounded-md p-4 grid grid-cols-2 gap-2 z-50">
                                     {category.map((cat) => (
-                                        <a
+                                        <button
                                             key={cat._id}
-                                            href={`#/the-loai/${cat.slug}`}
-                                            className="block px-2 py-1 text-gray-300 hover:bg-gray-700 hover:text-white rounded"
-                                            onClick={() => setMobileOpen(false)}
+                                            onClick={() => {
+                                                setMobileOpen(false);
+                                                navigate(`/the-loai/${cat.slug}`);
+                                            }}
+                                            className="block text-left px-2 py-1 text-gray-300 hover:bg-gray-700 hover:text-white rounded w-full"
                                         >
                                             {cat.name}
-                                        </a>
+                                        </button>
                                     ))}
                                 </div>
                             )}
