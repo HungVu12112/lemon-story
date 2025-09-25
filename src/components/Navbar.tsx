@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProp> = ({category}) => {
                                     {category.map((cat) => (
                                         <a
                                             key={cat._id}
-                                            href={`/the-loai/${cat.slug}`}
+                                            href={`#/the-loai/${cat.slug}`}
                                             className="block px-2 py-1 text-gray-300 hover:bg-gray-700 hover:text-white rounded"
                                             onClick={() => setMobileOpen(false)}
                                         >

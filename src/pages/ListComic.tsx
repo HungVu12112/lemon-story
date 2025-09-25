@@ -16,7 +16,6 @@ export function ListComic() {
             </div>
         );
     }
-    console.error("Lỗi khi load chi tiết:",title );
     return (
         <div className="bg-gray-900 min-h-screen text-white">
             <Navbar category={category}/>
